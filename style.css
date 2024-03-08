@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.navMenu a:hover {
+  color: #e958e2a8;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a.active {
+    color: #e958e2;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #e958e2;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(278px);
+  transform: translateX(278px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .navMenu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navMenu a {
+      width: auto;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .navMenu .dot {
+      display: none;
+      width: 6px;
+      height: 6px;
+      background: #111;
+      }
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navMenu a {
+    width: auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #e958e2;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+  }
+
+  .navMenu a:hover ~ .dot {
+    opacity: 1;
+  }
+
+  .navMenu a:nth-child(1):hover ~ .dot {
+    transform: translateX(-50%);
+  }
+
+  .navMenu a:nth-child(2):hover ~ .dot {
+    transform: translateX(-50%) translateY(-30px);
+  }
+
+  .navMenu a:nth-child(3):hover ~ .dot {
+    transform: translateX(-50%) translateY(-60px);
+  }
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    text-align: center;
+}
+  
+  footer a {
+    color: #f6f4e6;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #e958e2;
+    transition: all 0.2s ease-in-out;
+  }
+
+footer i{
+    font-size: 1.5em;
+}
