@@ -142,7 +142,7 @@ body {
 footer{
     position: fixed;
     width: 100%;
-    bottom:0;
+    bottom:1rem;
     text-align: center;
 }
   
@@ -159,5 +159,4 @@ footer{
 
 footer i{
     font-size: 1.5em;
-    margin-bottom: 0.4em;
 }
